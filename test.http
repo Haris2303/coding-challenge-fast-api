@@ -1,0 +1,36 @@
+### Create user
+POST http://127.0.0.1:8000/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Andri",
+    "email": "andri@gmail.com",
+    "age": 25
+}
+
+### Get User by id
+GET http://127.0.0.1:8000/users/3853aec2-634f-4adc-ad02-cb0f6f82be66 
+Content-Type: application/json
+Accept: application/json
+
+### List users
+GET http://127.0.0.1:8000/users
+Content-Type: application/json
+Accept: application/json
+
+### Update user
+PUT http://127.0.0.1:8000/users/182e1416-9969-4e46-9130-1de5432ef148 
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Anggry Ramadani",
+    "email": "anggry@gmail.com",
+    "age": 21
+}
+
+### Update user
+DELETE http://127.0.0.1:8000/users/<function uuid4 at 0x000001BD102477E0> 
+Content-Type: application/json
+Accept: application/json
